@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strata — Exercici004</title>
+  <link rel="icon" href="assets/img/strata-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="estils.css">
+  <script defer src="assets/js/vendor/three.min.js"></script>
+  <script defer src="assets/js/vendor/3d-force-graph.min.js"></script>
+  <script defer src="assets/js/hero-graph.js"></script>
+</head>
+<body>
+
+  <!-- ========== 1. HEADER (sticky) ========== -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="#top" class="logo">
+        <img src="assets/img/strata-logo.svg" alt="Strata" width="104" height="22">
+      </a>
+
+      <nav class="main-nav" aria-label="Main">
+        <a href="#platform">Platform</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#atlas">Atlas</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://www.strata.ai/book-a-demo" class="pill" target="_blank" rel="noopener">
+          <span class="pill-dot"></span>See us at ILTACON Aug 2026
+        </a>
+        <a href="https://www.strata.ai/book-a-demo" class="btn" target="_blank" rel="noopener">Book a Demo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ========== 2. HERO ========== -->
+    <!-- hero-graph.js looks for .hero and draws the 3D graph behind .container -->
+    <section class="hero">
+      <div class="container">
+        <img src="assets/img/strata-icon.svg" alt="" class="hero-icon" width="56" height="53">
+
+        <h1>The work your firm doesn’t bill for, <span class="gradient-text">done</span>.</h1>
+
+        <p class="hero-text">AI agents that run the operational work your firm doesn’t bill for. We turn it into recovered revenue and reclaimed capacity.</p>
+
+        <div class="actions">
+          <a href="https://www.strata.ai/book-a-demo" class="btn" target="_blank" rel="noopener">Book a Demo</a>
+          <a href="#platform" class="link-arrow">See the platform <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <div class="hero-shot">
+          <img src="assets/img/nexus-screenshot.webp" alt="Strata Nexus dashboard: operational value with revenue recovered and capacity reclaimed, plus Friday’s morning brief" width="3426" height="1846">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. PLATFORM ========== -->
+    <section id="platform" class="section">
+      <div class="container">
+        <p class="eyebrow">The platform, briefly</p>
+        <h2>One platform. Three surfaces.</h2>
+
+        <div class="cards">
+          <article class="card card-atlas">
+            <h3><span>Strata</span> Atlas</h3>
+            <p>Where your firm’s operational map lives. Data sources connected, knowledge organized, ontology managed, workflows configured. The technical surface, operated by your innovation and IT teams alongside ours.</p>
+          </article>
+          <article class="card card-nexus">
+            <h3><span>Strata</span> Nexus</h3>
+            <p>The executive dashboard. Operational Value at the top: Time Saved, Revenue Recovered. Every workflow’s health, every integration’s status, and a Morning Brief in your inbox. Built for the CIO, CFO, COO and Managing Partner.</p>
+          </article>
+          <article class="card card-canvas">
+            <h3><span>Strata</span> Canvas</h3>
+            <p>The design surface for new automations. Workflows get built here, by our team and your SMEs together, before they’re promoted into production.</p>
+          </article>
+        </div>
+
+        <article class="core">
+          <h3><span>Strata</span> Core</h3>
+          <p>The engine underneath. Every workflow runs on it. Every dashboard reads from it. Every integration flows through it. One foundation for the work.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== 4. MESSAGE BAND ========== -->
+    <section class="band">
+      <div class="container">
+        <p class="band-main">Every workflow we run is a <strong>named automation</strong><br> with an owner and binary acceptance criteria.</p>
+        <p class="band-sub">We don’t lead with the AI. We lead with the numbers it moves.</p>
+      </div>
+    </section>
+
+    <!-- ========== 5. OPERATIONAL VALUE ========== -->
+    <section id="value" class="section">
+      <div class="container">
+        <p class="eyebrow eyebrow-bar">Operational value</p>
+        <h2>Two numbers. Reported every week.<br> Denominated in dollars and hours.</h2>
+
+        <div class="panel">
+          <div class="panel-top">
+            <p>Strata Nexus · Operational Value</p>
+            <p>Illustrative · Mid-size firm · Monthly</p>
+          </div>
+
+          <div class="metrics">
+            <div class="metric">
+              <p class="metric-label">Revenue recovered</p>
+              <p class="metric-number"><span class="unit">$</span>428,610</p>
+              <p class="metric-text">Dollars collected that would have been written off. <span class="badge">+18% MoM</span></p>
+            </div>
+            <div class="metric">
+              <p class="metric-label">Capacity reclaimed</p>
+              <p class="metric-number">1,284<span class="unit unit-small">hrs</span></p>
+              <p class="metric-text">Hours returned to paralegals, billing, and intake. <span class="badge">≈ 12 FTE-weeks</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. FROM THE FIELD (dark) ========== -->
+    <section id="field" class="section dark">
+      <div class="container two-cols">
+        <div class="field-text">
+          <p class="eyebrow eyebrow-bar">From the field</p>
+          <p class="big-number">13,000</p>
+          <p class="mono-label">Invoices a month, one client firm</p>
+          <p class="field-story">That was the workload for one firm’s five-to-seven-person appeals team, and below the appeal threshold, the money got walked away from. Strata’s agents now analyze every line-item deduction and draft each appeal narrative for attorney review. Nothing is auto-submitted. The attorneys decide; the agents do the work that made deciding too expensive.</p>
+          <p class="field-note">Invoice appeals is one named automation. The same platform runs billing follow-up, lateral onboarding, and trust accounting.</p>
+        </div>
+
+        <div class="data-card">
+          <p class="mono-label">One client firm</p>
+          <dl>
+            <div><dt>E-billing portals</dt><dd>19</dd></div>
+            <div><dt>Appeal cycle</dt><dd>4-6 weeks</dd></div>
+            <div><dt>Appeals team</dt><dd>5-7 people</dd></div>
+            <div><dt>Auto-submitted appeals</dt><dd>0</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. WORKFLOWS ========== -->
+    <section id="workflows" class="section workflows-section">
+      <div class="container">
+        <p class="eyebrow">Workflows we run</p>
+        <h2>Every automation, accountable by name.</h2>
+        <p class="intro">Strata operates underneath the billable work, not against it. The workflows on this page are clerical, operational, or administrative. You accept the work when it meets the bar.</p>
+
+        <ul class="workflows">
+          <li class="workflow">
+            <p class="wf-label"><span class="tag">WF · Invoice mgmt</span></p>
+            <div>
+              <h3>Invoice management</h3>
+              <p>The e-billing layer of your firm, run by agents: guideline compliance before an invoice goes out, deduction analysis when it comes back, and the portal work in between.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="workflow workflow-sub">
+            <p class="wf-label"><span class="tag"><span aria-hidden="true">↳</span> Appeals</span></p>
+            <div>
+              <h3>Invoice appeals</h3>
+              <p>Every reduction analyzed against the invoice and the client’s guidelines. Every appeal narrative drafted for attorney review. Nothing is auto-submitted. The money you’ve been writing off, pursued at machine scale.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="workflow">
+            <p class="wf-label"><span class="tag">WF · Collections</span></p>
+            <div>
+              <h3>Billing follow-up and collections</h3>
+              <p>Proformas chased before they go stale, aged AR worked in 30, 60, and 90 day buckets, client-facing sends approved by a person. Every day of lock-up is working capital your partners are lending interest-free.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="workflow">
+            <p class="wf-label"><span class="tag">WF · Lateral</span></p>
+            <div>
+              <h3>Lateral onboarding</h3>
+              <p>The unbilled drag between signing a lateral and their book billing here: conflicts questionnaires, client and matter transfers, timekeeper and billing setup, systems access. Weeks become days.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="workflow">
+            <p class="wf-label"><span class="tag">WF · Trust</span></p>
+            <div>
+              <h3>Trust accounting and reconciliation</h3>
+              <p>Three-way reconciliation on schedule instead of when someone finds time, unclaimed-funds aging, disbursement checks. The work that gets firms disciplined when it slips.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </li>
+          <li class="workflow">
+            <p class="wf-label"><span class="tag">WF · Back office</span></p>
+            <div>
+              <h3>Back office</h3>
+              <p>AR, AP, payroll support, records and document management. High-volume, rule-heavy, and exactly what agents are for.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 8. ATLAS ========== -->
+    <section id="atlas" class="section">
+      <div class="container">
+        <p class="eyebrow eyebrow-bar">Strata Atlas</p>
+        <h2 class="title-xl">Your firm’s knowledge, made operational.</h2>
+        <p class="intro">The knowledge that runs your firm lives in people’s heads. Atlas puts it to work.</p>
+
+        <img src="assets/img/atlas-screenshot.webp" alt="Strata Atlas knowledge graph of a law firm, with people, systems and workflows connected, and a detail panel for Whitfield Carras LLP" class="atlas-shot" width="1706" height="1092">
+
+        <ol class="atlas-steps">
+          <li><h3>Map.</h3><p>Atlas learns how your firm actually works.</p></li>
+          <li><h3>Structure.</h3><p>Your knowledge, organized so an agent can act on it.</p></li>
+          <li><h3>Operate.</h3><p>Agents run the work. Recovery reported every week.</p></li>
+          <li><h3>Refine.</h3><p>Ask it anything. Correct what it misses. The map stays yours.</p></li>
+        </ol>
+
+        <p class="atlas-note">It’s not a black box. Watch it reason, follow the connections it draws, and correct what it gets wrong.</p>
+
+        <div class="two-cols atlas-demo">
+          <!-- Static example of a query (no real form) -->
+          <div class="query" aria-label="Example question for Atlas">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"></circle><path d="M20 20l-3.2-3.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+            <span class="query-text">What does onboarding a lateral hire involve?</span>
+            <span class="query-btn">Ask</span>
+          </div>
+
+          <div class="nodes">
+            <p class="eyebrow">Editable nodes</p>
+            <div class="node-row">
+              <div class="node">
+                <p class="node-title">Fee write-off approval</p>
+                <p>Write-offs over $5,000 route to the Managing Partner for sign-off.</p>
+                <p class="confirmed"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> Confirmed by your firm</p>
+              </div>
+              <div class="node">
+                <p class="node-title">Client intake gate</p>
+                <p>Conflicts must clear and billing guidelines attach before a matter opens.</p>
+                <p class="confirmed"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> Confirmed by your firm</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 9. GOVERNANCE ========== -->
+    <section id="governance" class="section">
+      <div class="container">
+        <p class="eyebrow eyebrow-bar">Governance</p>
+        <h2>Built for the people who have to say yes.</h2>
+        <p class="intro intro-dark">Bring your security team to the first demo. What they’ll ask for is what we built first.</p>
+
+        <div class="gov-cards">
+          <article class="gov-card">
+            <h3>Cited</h3>
+            <p>Every answer an agent gives carries claim-level citations back to source.</p>
+          </article>
+          <article class="gov-card">
+            <h3>Approved</h3>
+            <p>Human checkpoints are workflow steps. Your people decide; the run resumes the moment they respond.</p>
+          </article>
+          <article class="gov-card">
+            <h3>Contained</h3>
+            <p>The Library of Actions works the way your DBAs think: approved actions only, proper credentials, logged completely.</p>
+          </article>
+          <article class="gov-card">
+            <h3>Controlled</h3>
+            <p>Model and tool choice is governed per step, not per vendor.</p>
+          </article>
+        </div>
+
+        <ol class="run-steps">
+          <li><span class="step-num">01</span><h3>Trigger</h3><p>email, schedule, or on demand</p></li>
+          <li><span class="step-num">02</span><h3>Agent works</h3><p>approved actions only</p></li>
+          <li><span class="step-num">03</span><h3>Your team approves</h3><p>wherever judgment matters</p></li>
+          <li><span class="step-num">04</span><h3>Delivered</h3><p>logged end to end</p></li>
+        </ol>
+
+        <ul class="guarantees">
+          <li>Single sign-on</li>
+          <li>Encrypted credentials at rest</li>
+          <li>Isolation between every account</li>
+          <li>The map Atlas builds stays yours</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== 10. GET STARTED ========== -->
+    <section id="get-started" class="section cta">
+      <div class="container">
+        <p class="eyebrow">Get started</p>
+        <h2 class="title-xl">See what your firm is currently <span class="gradient-text gradient-green">writing off</span>.</h2>
+        <p class="intro">Your firm has a write-off number. Let’s find it.</p>
+
+        <div class="actions">
+          <a href="https://www.strata.ai/book-a-demo" class="btn" target="_blank" rel="noopener">Book a Demo</a>
+          <a href="#platform" class="link-arrow">See the platform <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="trust">
+          <div>
+            <p class="mono-label">Approvals</p>
+            <p>Your team approves. Agents do the work.</p>
+          </div>
+          <div>
+            <p class="mono-label">Audit</p>
+            <p>Every run logged end to end.</p>
+          </div>
+          <div>
+            <p class="mono-label">Security</p>
+            <p>SSO · encrypted credentials · account isolation</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <a href="#top" class="footer-logo">
+        <img src="assets/img/strata-icon.svg" alt="" width="24" height="23">
+        <span>STRATA</span>
+      </a>
+      <nav aria-label="Footer">
+        <a href="#platform">Platform</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#atlas">Atlas</a>
+        <a href="https://www.strata.ai/book-a-demo" target="_blank" rel="noopener">Book a demo</a>
+      </nav>
+      <p>© 2026 Strata AI, Inc.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
